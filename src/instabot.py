@@ -163,7 +163,7 @@ class InstaBot:
         self.follows_db_c = self.follows_db.cursor()
         check_and_update(self)
         fake_ua = UserAgent()
-        self.user_agent = check_and_insert_user_agent(self, str(fake_ua.random))
+        self.user_agent = ("")
         self.bot_start = datetime.datetime.now()
         self.start_at_h = start_at_h
         self.start_at_m = start_at_m
